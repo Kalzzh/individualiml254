@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>IML 254</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+</style>
+</head>
+<body>
+
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #808080;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: autofit;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 400%;
+    height: auto;
+  }
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn"onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="index.html">Home</a>
+    <a href="aboutme.html">About Me</a>
+    <a href="education.html">Education</a>
+    <a href="myfamily.html">My Family</a>
+    <a href="myfriends.html">My Friends</a>
+    <a href="myhobbies.html">My Hobbies</a>
+    <a href="mycontact.html">My Contact</a>
+  </div>
+</div>
+
+
+
+<h2><span style='font-size:100px;'>&#129333;</span>ABOUT ME</h2>
+<p><marquee>I WOULD LIKE TO TALK ABOUT MYSELF IN THIS PAGE. KINDLY SCROLL DOWN AND TAKE A LOOK GUYS!</marquee></p>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+
+<header>
+  <h2><marquee>"Life is a learning experience, we have at the end of its memories and skills."</marquee></h2>
+</header>
+
+<section>
+    
+  <article>
+
+
+<h2>SOME OF FUN FACTS ABOUT ME!</h2><font face="Palatino">
+
+
+
+
+
+
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1>LET'S BEGIN THE STORY </h1>
+<hr>
+
+<h2>HAIKAL HAKIMI</h2>
+<p>"JUST A GUY WHO NEED THE SERENITY AND PEACE"</p>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="image/haikal1.jpg"style="width:100%">
+      <h3>A Little of Me</h3>
+      <p>I was a very naughty and stubborn boy before, you guys can just see how naughty i am by looking at picture, HAHAHA!.</p> 
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="image/haikal2.jpg"style="width:100%">
+      <h3>Maybe Handsome, But Maybe Not</h3>
+      <p>i do not know if this picture can make you guy blushing or what...CHILL IM KIDDING HAHAHA!</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <video width="225" height="335" controls>
+    <source src="video/haikalvid0.mp4" type="video/mp4">
+    </video>
+      <h3>A Teenager Of Me</h3>
+      <p>Felt like im still younger but yeah, im already 20 and currently in my last teen.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="image/haikal4.jpg"style="width:100%">
+      <h3>Many Sides Of Me</h3>
+      <p>Im such a funny, sporting, supportive, and crazy guy sometimes. So i can said that im such an extrovert guy, i guess?</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<div class="content">
+ <img src="image/haikal5.jpg"style="width:100%">
+<center><iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/74XzTRpfy7idBqVoFBrpZJ?utm_source=generator" width="50%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></center>
+  <h3>AFTER ALL, IM JUST A GUY...</h3>
+  <p>Im just a guy whos is always appreciate myself. Im just a guy who is love to give a happines for everyone arounds me, and alwyas want my own serenity since i got a more few times to breath on this temporary earth.</p>
+ 
+</div>
+
+<!-- END MAIN -->
+
+
+
+
+</div>
+
+  </article>
+</section>
+<br>
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+
+<footer>
+  <p>MUHAMMAD HAIKAL HAKIMI</p>
+</footer>
+</body>
+</html>

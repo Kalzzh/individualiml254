@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>IML 254</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #5f9ea0;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: autofit;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+
+</style>
+</head>
+<body>
+
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="index.html">Home</a>
+    <a href="aboutme.html">About Me</a>
+    <a href="education.html">Education</a>
+    <a href="myfamily.html">My Family</a>
+    <a href="myfriends.html">My Friends</a>
+    <a href="myhobbies.html">My Hobbies</a>
+    <a href="mycontact.html">My Contact</a>
+  </div>
+</div>
+
+
+
+
+<h2><span style='font-size:100px;'>&#127949;</span>MY HOBBIES</h2>
+<p><marquee>NOW WE MOVING TO MY HOBBIES PAGE, LETS SEE HOW MANY HOBBIES I GOT!!</marquee></p>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+
+<header>
+  <h2><marquee>"You have to find 3 hobbies that make you smart,fit, and wealthy."</marquee></h2>
+</header>
+
+<section>
+    
+  <article>
+
+
+<h2>MY HOBBIES</h2><font face="Palatino">
+
+
+
+
+
+
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1>LET'S BEGIN THE STORY </h1>
+<hr>
+
+<h2>HAIKAL HAKIMI</h2>
+<p>JUST A GUY WHO NEED THE SERENITY AND PEACE.</p>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="image/hobby10.jpg"style="width:100%">
+      <h3>RIDING A BIKE</h3>
+      <p>After a long time we guys did not have time to meet, but on this night we made it after a long friendship together.</p> 
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="image/hobby2.jpg"style="width:100%">
+      <h3>THRIFTING.</h3>
+      <p>I loved to buy a new clothes with a affordable prices, so? THRIFTING IS THE SOLUTION!</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="image/hobby3.jpg"style="width:100%">
+      <h3>HIKING</h3>
+      <p>Finally.. i have reached the top of the hill! yeay...</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="image/hobby4.jpg"style="width:100%">
+      <h3>COLLECTING FIGURE/TOY</h3>
+      <p>If there is someone ask me on why do i keep buying it? It is just a simple answer for me, i did not experience this when i was a kid, so now i can fulfilled my inner child and made a kid version of me was proud and happy :).</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<div class="content">
+  <video width="950" height="600" controls>
+  <source src="video/haikalvid4.mp4" type="video/mp4">
+  </video>
+  <h3>MY TOP TIER HOBBY: FUTSAL!</h3>
+  <p>That was my longest hobby since i was child. I loved playing futsal with my friends but sometimes, you can make a new friends too! Just come and play together and have a joy and fun.</p>
+  <p>For your information, you can get healthy by playing futsal too. It can strength up your bodies, legs, and get a worthy sweat for your body!</p>
+</div>
+
+<!-- END MAIN -->
+
+
+
+
+</div>
+
+  </article>
+</section>
+<br>
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+
+<footer>
+  <p>MUHAMMAD HAIKAL HAKIMI</p>
+</footer>
+</body>
+</html>

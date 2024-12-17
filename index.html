@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>IML 254</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+ background-color:#dcdcdc
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #253529;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: black;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #dcdcdc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #dcdcdc;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #dcdcdc;
+  padding: 10px;
+  text-align: center;
+  color: black;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.7s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.5s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn"onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="index.html">Home</a>
+    <a href="aboutme.html">About Me</a>
+    <a href="education.html">Education</a>
+    <a href="family.html">My Family</a>
+    <a href="my friends.html">My Friends</a>
+    <a href="hobby.html">My Hobbies</a>
+    <a href="mycontact.html">My Contact</a>
+  </div>
+</div>
+
+<font face="Impact">
+<h2><marquee>WELCOME TO MY PERSONAL WEBSITE! THATS A PLEASURE FOR WELCOMING YOU! TAKE A LOOK AND HAVE FUN!</marquee></h2>
+<span style="font-size:50px;cursor:pointer" onclick="openNav()">&#9776; Open Menu</span>
+
+<h2></h2>
+<p></p>
+<p></p>
+
+<header>
+<tr>
+<td><img src="image/haikal0.jpg" alt="HTML5 Icon" width="500" height="500"></td>
+<h2>Hello There!</h2>
+</header>
+
+
+<font face="Palatino">
+<center><h2>MUHAMMAD HAIKAL HAKIMI BIN ABDUL RAHMAN</h2><font face="Palatino"></center>
+<center><p>Hello! I'm Haikal, and i'm from KCDIM 1444 4A (DIPLOMA IN LIBRARY INFORMATICS) SEMESTER 4. I welcome you to visit this personal website of mine. You may discover more about me, my friends, and insights about my family on this website.</p></center>
+
+<header>
+
+  
+  <!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <center><img src="image/haikal8.jpg"style="width:20%"></center>
+      <center><h3>ENJOY IT</h3></center>
+      <center><p>KINDLY LOOK AT MY PERSONAL WEBSITE WITH A HAPPY MOOD OF YOURSELF YA :) </p></center> 
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+   <center><img src="image/haikal7.jpg"style="width:20%"></center>
+      <center><h3>RELAX AND CHILL..</h3></center>
+      <center><p>LETS TAKE A LOOK AT MY PERSONAL WEBSITE WITH OUR MIND ARE CHILL AND STEADY, LIKE MY PICTURE ABOVE..</p>  
+
+  </div>
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+
+</body>
+</html>
